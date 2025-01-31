@@ -1,20 +1,20 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate,
+  
+ } from 'react-router-dom';
 import Layout from './Layout/Layout';
-import App from './App';
 
 
 
 export const router = createBrowserRouter([
-  
   {
     path: '/',
-    element: (
-      <App/>  
-    ),
-      
+    element: <Navigate to="/en/" replace />,
+  },
+  {
+    path: '/en',
+    element: <Layout />, 
     children: [
-     
+      
     ],
   },
-
 ]);
