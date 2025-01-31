@@ -10,8 +10,8 @@ const Layout: React.FC<LayoutProps> = () => {
     <div id="dashboard">
       <div className="flex">
     
-        <div className="flex-1 px-5 pt-5 pb-10 dark:bg-gray-600">
-          <div className="pb-5">
+        <div className="flex-1  dark:bg-gray-600">
+          <div className="">
             <Navbar />
           </div>
           <div className="mt-5">
