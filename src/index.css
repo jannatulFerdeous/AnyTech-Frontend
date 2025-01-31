@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* background-color: #f5f5f5; */
+}
+
+.light {
+  --plumPurple: 149, 79, 142;
+  --btnSecondary: 45, 55, 72;
+  --shadeOfOrange: 249, 115, 22;
+  --shadeOfBlue: 0, 103, 166;
+  --shadeOfGreen: 4, 120, 87;
+  --shadeOfGrayishWhite: 209, 213, 219;
+  --lightShadeOfBlueGray: 246, 248, 251;
+  --shadeOfLightYellow: 255, 253, 243;
+  --shadeOfGray: 31, 41, 55;
+  --solidBlack: 0, 0, 0;
+  --solidWhite: 255, 255, 255;
+  --borderColor: 229, 231, 235;
+  --linkColor: 128, 128, 128;
+  --inputTextColor: 174, 174, 17;
+  --btnPrimary: 249, 115, 22;
+  --btnGhost: 217, 217, 217;
+  --editCardBorderColor: 74, 85, 104;
+  --shadeOfRed: 255, 0, 0;
+  --lightRed: 255, 61, 61, 0.671;
+  --profileDetailsTextColor: 95, 95, 95;
+  --lightGray: 243, 244, 246;
+  --bgGray: 94, 92, 100;
+  --background: 255, 255, 255;
+}
+.dark {
+  --plumPurple: 149, 79, 142;
+  --btnSecondary: 45, 55, 72;
+  --shadeOfOrange: 233, 118, 1;
+  --shadeOfBlue: 0, 103, 166;
+  --shadeOfGreen: 4, 120, 87;
+  --shadeOfGrayishWhite: 245, 245, 245;
+  --lightShadeOfBlueGray: 246, 248, 251;
+  --shadeOfGray: 31, 41, 55;
+  --solidBlack: 0, 0, 0;
+  --solidWhite: 255, 255, 255;
+  --borderColor: 229, 231, 235;
+  --linkColor: 128, 128, 128;
+  --inputTextColor: 174, 174, 17;
+  --btnPrimary: 249, 115, 22;
+  --btnGhost: 217, 217, 217;
+  --editCardBorderColor: 74, 85, 104;
+  --shadeOfRed: 255, 0, 0;
+  --lightRed: 255, 61, 61, 0.671;
+  --profileDetailsTextColor: 95, 95, 95;
+  --lightGray: 243, 244, 246;
+  --background: 0, 0, 0;
+  --bgGray: 75, 85, 99;
+}
+
+body.light {
+  background-color: rgb(var(--shadeOfGrayishWhite));
+  color: rgb(var(--solidBlack));
+}
+
+body.dark {
+  background-color: rgb(var(--solidBlack));
+  color: rgb(var(--shadeOfGray));
+}

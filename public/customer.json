@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "img": "https://via.placeholder.com/150?text=John+Smith",
+      "accountNo": "123456",
+      "sendersName": "John Smith",
+      "phone": "1234567890",
+      "email": "john.smith@example.com",
+      "company": "Task Technology",
+      "city": "Dhaka",
+      "address": "banani, Dhaka.",
+      "country": "Bangladesh",
+      "zipCode": "12232",
+      "postalCode": "123456",
+      "createdAt": "2024-12-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "img": "https://via.placeholder.com/150?text=Jane+Doe",
+      "accountNo": "654321",
+      "sendersName": "Jane Doe",
+      "phone": "9876543210",
+      "email": "jane.doe@example.com",
+      "address": "banani, Dhaka.",
+      "company": "Innovate Solutions",
+      "city": "Chittagong",
+      "country": "Bangladesh",
+      "zipCode": "4000",
+      "postalCode": "654321",
+      "createdAt": "2024-12-02T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "img": "https://via.placeholder.com/150?text=Alice+Johnson",
+      "accountNo": "112233",
+      "sendersName": "Alice Johnson",
+      "phone": "5566778899",
+      "email": "alice.johnson@example.com",
+      "address": "banani, Dhaka.",
+      "company": "Future Vision Inc.",
+      "city": "Sylhet",
+      "country": "Bangladesh",
+      "zipCode": "3100",
+      "postalCode": "112233",
+      "createdAt": "2024-12-03T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "img": "https://via.placeholder.com/150?text=Robert+Brown",
+      "accountNo": "445566",
+      "sendersName": "Robert Brown",
+      "phone": "2233445566",
+      "email": "robert.brown@example.com",
+      "address": "banani, Dhaka.",
+      "company": "Skyline Enterprises",
+      "city": "Khulna",
+      "country": "Bangladesh",
+      "zipCode": "9100",
+      "postalCode": "445566",
+      "createdAt": "2024-12-04T11:00:00Z"
+    },
+    {
+      "id": 5,
+      "img": "https://via.placeholder.com/150?text=Emily+Davis",
+      "accountNo": "778899",
+      "sendersName": "Emily Davis",
+      "phone": "3344556677",
+      "email": "emily.davis@example.com",
+      "address": "banani, Dhaka.",
+      "company": "NextGen Solutions",
+      "city": "Rajshahi",
+      "country": "Bangladesh",
+      "zipCode": "6000",
+      "postalCode": "778899",
+      "createdAt": "2024-12-05T12:00:00Z"
+    }
+  ],
+  "success": true,
+  "meta": { "page": 1, "limit": 10, "total": 5 }
+}
