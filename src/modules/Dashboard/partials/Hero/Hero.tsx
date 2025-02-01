@@ -3,14 +3,15 @@ import bg1 from '../../../../assets/backgrounds/WaveLinesDesktop1.svg';
 import bg2 from '../../../../assets/backgrounds/WaveLinesDesktop2.svg';
 import bg3 from '../../../../assets/backgrounds/WaveLinesDesktop3.svg';
 import bg4 from '../../../../assets/backgrounds/WaveLinesDesktop4.svg';
-import avatar from '../../../../assets/backgrounds/bg2.jpg';
+import avatar from '../../../../assets/backgrounds/b1.png';
+
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [smoothPosition, setSmoothPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = event => {
+    const handleMouseMove =( event:any ) => {
       setMousePosition({
         x: event.clientX,
         y: event.clientY,
@@ -46,14 +47,14 @@ const Hero = () => {
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute w-full min-h-screen bg-gradient-to-r from-[#0099ff] to-[#0044cc] skew-y-[-6deg] -top-52"></div>
-      <div className="absolute right-0 bottom">
+      {/* <div className="absolute right-0 bottom">
         <img
           src={avatar}
           alt="Business Woman"
-          className="  w-[800px] mb-44"
-          style={{ clipPath: 'polygon(0% 20%, 100% 10%, 100% 60%, 0% 100%)' }}
+          className="  w-full mt-10 -rotate-6 "
+          
         />
-      </div>
+      </div> */}
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <img
@@ -92,14 +93,18 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center pl-[17rem] text-white mb-52">
-        <h2 className="text-8xl font-medium max-w-4xl leading-tight">
+      <div className="absolute inset-0 flex flex-col justify-center pl-[11rem] text-white mb-52">
+        <h2 className="text-7xl font-medium  leading-tight">
           Embrace the <br /> future of finance
         </h2>
         <p className="mt-4 text-lg max-w-xl">
           Reimagine financial services with AnyTech’s open platform, distributed
           banking solution that powers transformation
         </p>
+        <button className=" mt-3 bg-orange-400 text-white px-6 py-3 rounded-sm shadow-lg  font-semibold uppercase hover:bg-orange-500 transition-all duration-300 w-fit">
+  Reach out to us
+</button>
+
       </div>
 
       {/* Avatar Image */}

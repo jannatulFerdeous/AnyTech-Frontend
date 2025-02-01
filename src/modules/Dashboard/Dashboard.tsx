@@ -1,9 +1,11 @@
-import Page from './partials/Hero/Hero';
+import Hero from './partials/Hero/Hero';
+import Power from './partials/Power/Power';
 
 const Dashboard = () => {
   return (
     <div>
-      <Page />
+      <Hero />
+      <Power/>
     </div>
   );
 };

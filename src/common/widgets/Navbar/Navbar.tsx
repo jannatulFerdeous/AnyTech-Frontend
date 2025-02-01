@@ -1,16 +1,14 @@
 import { ChevronDown, Globe } from 'lucide-react';
 import { navbarLink, language } from './config/constants'; // Assuming the constant is imported from a 'constants.ts' file
-import { useLocation } from 'react-router-dom';
+
 
 const Navbar = () => {
-  const location = useLocation();
-  const isEnglishPage = location.pathname === '/en/';
+
+  // const isEnglishPage = location.pathname === '/en/';
 
   return (
     <nav
-      className={`${
-        isEnglishPage ? 'bg-white text-blue-600' : '  text-white'
-      } p-6 transition-all duration-300`}
+      className={` text-white p-6 transition-all duration-300`}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -84,11 +82,10 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <a
             href="/en/contact"
-            className={`${
-              isEnglishPage
-                ? ' bg-blue-600 text-white border-blue-600 hover:bg-white hover:text-blue-600'
-                : 'bg-transparent text-white border-white hover:bg-white hover:text-blue-600'
-            } px-4 py-3  border transition text-lg`}
+            className={`
+                
+                bg-transparent text-white border-white hover:bg-white hover:text-blue-600
+            px-4 py-3  border transition text-lg`}
           >
             Contact Us →
           </a>
