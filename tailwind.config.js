@@ -5,9 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-    
-        
         background: 'rgba(var(--background))',
+      },
+      fontFamily: {
+        lexend: ["'Lexend Giga'", 'sans-serif'],
       },
     },
   },

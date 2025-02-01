@@ -1,9 +1,7 @@
-import { createBrowserRouter, Navigate,
-  
- } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Layout from './Layout/Layout';
-
-
+import { dashboardRoutes } from './Routes/dashboard';
+import { aboutRoutes } from './Routes/about';
 
 export const router = createBrowserRouter([
   {
@@ -12,9 +10,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/en',
-    element: <Layout />, 
-    children: [
-      
-    ],
+    element: <Layout />,
+    children: [...dashboardRoutes, ...aboutRoutes],
   },
 ]);
