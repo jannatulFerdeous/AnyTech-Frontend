@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const location = useLocation();
-  const isEnglishPage = location.pathname === '/en';
+  const isEnglishPage = location.pathname === '/en/';
 
   return (
     <nav
