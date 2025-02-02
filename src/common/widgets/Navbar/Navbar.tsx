@@ -1,15 +1,10 @@
 import { ChevronDown, Globe } from 'lucide-react';
-import { navbarLink, language } from './config/constants'; // Assuming the constant is imported from a 'constants.ts' file
+import { navbarLink, language } from './config/constants'; 
 
 
 const Navbar = () => {
-
-  // const isEnglishPage = location.pathname === '/en/';
-
   return (
-    <nav
-      className={` text-white p-6 transition-all duration-300`}
-    >
+    <nav className="text-white p-6 transition-all duration-300">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="font-bold text-2xl flex items-center">
@@ -25,7 +20,7 @@ const Navbar = () => {
                 <div key={index} className="relative group">
                   <a
                     href="#"
-                    className="hover:text-cyan-300 transition flex items-center"
+                    className="relative hover:text-cyan-300 transition flex items-center after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {link.pageTitle} <ChevronDown className="w-4 h-4 ml-1" />
                   </a>
@@ -49,7 +44,7 @@ const Navbar = () => {
               <a
                 key={index}
                 href={link.url}
-                className="hover:text-cyan-300 transition"
+                className="relative hover:text-cyan-300 transition after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.pageTitle}
               </a>
@@ -64,7 +59,7 @@ const Navbar = () => {
             </div>
 
             {/* Language Dropdown Menu */}
-            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg  opacity-0 group-hover:opacity-100 group-hover:block transition-all duration-200 ease-in-out">
+            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-all duration-200 ease-in-out">
               {language.subItems.map((subItem, subIndex) => (
                 <a
                   key={subIndex}
@@ -82,10 +77,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <a
             href="/en/contact"
-            className={`
-                
-                bg-transparent text-white border-white hover:bg-white hover:text-blue-600
-            px-4 py-3  border transition text-lg`}
+            className="bg-transparent text-white border-white hover:bg-white hover:text-blue-600 px-4 py-3 border transition text-lg"
           >
             Contact Us →
           </a>
