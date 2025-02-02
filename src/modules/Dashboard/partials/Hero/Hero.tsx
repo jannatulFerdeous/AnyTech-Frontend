@@ -5,13 +5,12 @@ import bg3 from '../../../../assets/backgrounds/WaveLinesDesktop3.svg';
 import bg4 from '../../../../assets/backgrounds/WaveLinesDesktop4.svg';
 import avatar from '../../../../assets/backgrounds/b1.png';
 
-
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [smoothPosition, setSmoothPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove =( event:any ) => {
+    const handleMouseMove = (event: any) => {
       setMousePosition({
         x: event.clientX,
         y: event.clientY,
@@ -93,18 +92,17 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center pl-[11rem] text-white mb-52">
-        <h2 className="text-7xl font-medium  leading-tight">
+      <div className="absolute inset-0 flex flex-col justify-center pl-[16rem] text-white mb-52">
+        <h2 className="text-[82px] font-semibold leading-tight">
           Embrace the <br /> future of finance
         </h2>
-        <p className="mt-4 text-lg max-w-xl">
+        <p className="mt-4 text-lg max-w-xl font-semibold">
           Reimagine financial services with AnyTech’s open platform, distributed
           banking solution that powers transformation
         </p>
-        <button className=" mt-3 bg-orange-400 text-white px-6 py-3 rounded-sm shadow-lg  font-semibold uppercase hover:bg-orange-500 transition-all duration-300 w-fit">
-  Reach out to us
-</button>
-
+        <button className=" mt-3 bg-orange-400 text-white text-xl px-8 py-4 rounded-sm shadow-lg font-semibold  hover:bg-orange-500 transition-all duration-300 w-fit">
+          Reach out to us
+        </button>
       </div>
 
       {/* Avatar Image */}
