@@ -3,7 +3,7 @@ import bg1 from '../../../../assets/backgrounds/WaveLinesDesktop1.svg';
 import bg2 from '../../../../assets/backgrounds/WaveLinesDesktop2.svg';
 import bg3 from '../../../../assets/backgrounds/WaveLinesDesktop3.svg';
 import bg4 from '../../../../assets/backgrounds/WaveLinesDesktop4.svg';
-import avatar from '../../../../assets/backgrounds/b1.png';
+
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -92,7 +92,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center pl-[16rem] text-white mb-52">
+      <div className="absolute inset-0 flex flex-col justify-center pl-[12rem] text-white mb-32">
         <h2 className="text-[82px] font-semibold leading-tight">
           Embrace the <br /> future of finance
         </h2>

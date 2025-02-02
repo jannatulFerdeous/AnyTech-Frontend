@@ -1,6 +1,23 @@
 import { useState, useEffect } from 'react';
 
-const Hero = ({
+interface BackgroundImage {
+  src: string;
+  alt: string;
+  position: string;
+  directionX: number;
+  directionY: number;
+}
+
+interface HeroProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  backgroundImages: BackgroundImage[];
+  gradientColors: string;
+  accentColors: string;
+}
+
+const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   description,
@@ -12,7 +29,7 @@ const Hero = ({
   const [smoothPosition, setSmoothPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = event => {
+    const handleMouseMove = (event: MouseEvent) => {
       setMousePosition({
         x: event.clientX,
         y: event.clientY,
@@ -75,12 +92,12 @@ const Hero = ({
       ></div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center pl-72 text-white mb-32">
+      <div className="absolute inset-0 flex flex-col justify-center pl-48 text-white mb-32">
         <p className="text-teal-300 uppercase tracking-wide text-sm">{title}</p>
-        <h2 className="text-8xl font-medium max-w-4xl leading-tight">
+        <h2 className="text-[82px] font-semibold leading-tight max-w-4xl  ">
           {subtitle}
         </h2>
-        <p className="mt-4 text-lg max-w-xl opacity-80">{description}</p>
+        <p className="mt-4 text-lg max-w-xl opacity-80 font-semibold">{description}</p>
       </div>
     </div>
   );
