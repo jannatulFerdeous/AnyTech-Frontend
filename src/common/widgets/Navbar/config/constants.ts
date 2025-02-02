@@ -1,8 +1,5 @@
 export const navbarLink = [
-  {
-    url: '/en',
-    pageTitle: 'Dashboard',
-  },
+
   {
     pageTitle: 'Solutions',
     subItems: [

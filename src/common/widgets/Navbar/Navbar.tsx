@@ -1,16 +1,15 @@
 import { ChevronDown, Globe } from 'lucide-react';
-import { navbarLink, language } from './config/constants'; 
-
+import { navbarLink, language } from './config/constants';
 
 const Navbar = () => {
   return (
     <nav className="text-white p-6 transition-all duration-300">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="font-bold text-2xl flex items-center">
+        {/* Logo - Clickable */}
+        <a href="/en" className="font-bold text-2xl flex items-center">
           <span className="font-extrabold text-3xl">ANY</span>
           <span className="font-normal text-3xl">TECH</span>
-        </div>
+        </a>
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8 text-lg">
