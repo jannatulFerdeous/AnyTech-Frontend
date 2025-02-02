@@ -1,3 +1,4 @@
+import Count from './partials/Count/Count';
 import Hero from './partials/Hero/Hero';
 import Philosophy from './partials/Philosophy/Philosophy';
 import Power from './partials/Power/Power';
@@ -10,6 +11,7 @@ const Dashboard = () => {
       <div className=" mt-[250px]">
         <Philosophy />
       </div>
+      <Count />
     </div>
   );
 };
