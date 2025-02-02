@@ -1,6 +1,6 @@
-import { ChartNoAxesCombined, CreditCard, Landmark } from 'lucide-react';
+import { ChartNoAxesCombined, Landmark } from 'lucide-react';
 import bg1 from '../../../../assets/backgrounds/do.jpg';
-import line2 from '../../../../assets/frames/founder/2.svg';
+
 import line3 from '../../../../assets/frames/founder/3.svg';
 import Card from '../Card/Card';
 
