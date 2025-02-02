@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { LayoutProps } from './config/types';
 
 import Navbar from '../common/widgets/Navbar/Navbar';
+import Footer from '../common/widgets/Footer/Footer';
 
 const Layout: React.FC<LayoutProps> = () => {
   return (
@@ -18,6 +19,7 @@ const Layout: React.FC<LayoutProps> = () => {
           <div className="">
             <Outlet />
           </div>
+          <Footer/>
         </div>
       </div>
     </div>
