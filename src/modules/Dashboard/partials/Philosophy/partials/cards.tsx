@@ -1,4 +1,7 @@
 import { Lightbulb, Link, Settings } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Cards = () => {
   const cardData = [
@@ -25,19 +28,27 @@ const Cards = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Adjust duration
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="flex flex-wrap justify-center gap-16 p-2 mb-24">
+    <div className="flex flex-wrap justify-center gap-16 p-2  mb-24">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="bg-blue-50 shadow-lg rounded-xl p-6 max-w-sm"
+          className="bg-blue-50 shadow-sm rounded-xl p-6 max-w-sm"
+          data-aos="fade-up"
         >
           <div
             className={`w-12 h-12 flex items-center justify-center ${card.bgColor} rounded-full`}
           >
             <span className="text-2xl">{card.icon}</span>
           </div>
-          <h3 className="text-2xl font-semibold text-gray-900 mt-4">
+          <h3 className="text-2xl font-semibold text-blue-950 mt-4">
             {card.title}
           </h3>
           <p className="text-gray-600 mt-4">{card.description}</p>
